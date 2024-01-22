@@ -6,14 +6,52 @@
 }
 
 .name {
-    background-color: #f0f0f0;
     color: black;
-    padding: 8px;
+    margin: 5px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 0px 5px 5px 0px;
 }
 
-.h-button {
+button {
+    background-color: #f0f0f0;
+    transition-duration: 0.4s;
+    border: none;
+    padding: 8px 0px;
     margin: 6px 0px;
+    text-align: left;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.h-button {
+    width: 200px;
+    text-overflow: clip;
+}
+
+button:hover {
+    background-color: #d0d0d0;
+    transition-duration: 0.4s;
+}
+
+.no-bullet {
+    list-style: none;
+}
+
+.hero-tab {
+    margin: 10px 0px 20px 20px;
+    display: flex;
+}
+
+.lbord {
+    width: 10px;
+    height: auto;
+    background-color: green;
+}
+
+.rcont {
+    margin-left: 15px;
+}
+
+h2 {
+    margin: 0px;
 }

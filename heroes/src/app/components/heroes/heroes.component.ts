@@ -13,5 +13,16 @@ import { NgFor, NgIf } from '@angular/common';
 	styleUrl: './heroes.component.css'
 })
 export class HeroesComponent {
+	onClickCallback = (id: number) => {
+		console.log(id)
+		for (let index = 0; index < this.heroes.length; index++) {
+			const element = this.heroes[index];
+			if(element.id !== id) {
+				continue;
+			}
+			element.isVisible = !element.isVisible;
+		}
+	}
+
 	heroes: Hero[] = HEROES;
 }

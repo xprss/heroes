@@ -1,18 +1,24 @@
-<div *ngFor="let hero of heroes">
-    <div *ngIf="hero.id<20">
-        <!-- <h2>{{hero.name}} details:</h2>
-        <div><span>ID: {{hero.id}}</span></div>
-        <div><span>Name: {{hero.name | uppercase}}</span></div>
-        <div>
-            <label for="hero-name">Hero name: </label>
-            <input type="text" id="name" placeholder="Hero name" [(ngModel)]="hero.name">
-        </div> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 
-        <li>
-            <button class="h-button">
+<div *ngFor="let hero of heroes">
+    <div *ngIf="hero.id>0">
+        <li class="no-bullet">
+            <button class="h-button" (click)="onClickCallback(hero.id)">
                 <span class="badge">{{hero.id}}</span>
                 <span class="name">{{hero.name}}</span>
             </button>
+            <div *ngIf="hero.isVisible" class="hero-tab">
+                <div class="lbord"></div>
+                <div class="rcont">
+                    <h2>{{hero.name}} details:</h2>
+                    <div><span>ID: {{hero.id}}</span></div>
+                    <div><span>Name: {{hero.name | uppercase}}</span></div>
+                    <div>
+                        <label for="hero-name">Hero name: </label>
+                        <input type="text" id="name" placeholder="Hero name" [(ngModel)]="hero.name">
+                    </div>
+                </div>
+            </div>
         </li>
     </div>
 </div>
