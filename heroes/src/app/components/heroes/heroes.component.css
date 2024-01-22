@@ -1,0 +1,19 @@
+.badge {
+    background-color: darkslateblue;
+    color: white;
+    padding: 8px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.name {
+    background-color: #f0f0f0;
+    color: black;
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.h-button {
+    margin: 6px 0px;
+}

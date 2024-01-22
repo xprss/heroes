@@ -1,0 +1,18 @@
+<div *ngFor="let hero of heroes">
+    <div *ngIf="hero.id<20">
+        <!-- <h2>{{hero.name}} details:</h2>
+        <div><span>ID: {{hero.id}}</span></div>
+        <div><span>Name: {{hero.name | uppercase}}</span></div>
+        <div>
+            <label for="hero-name">Hero name: </label>
+            <input type="text" id="name" placeholder="Hero name" [(ngModel)]="hero.name">
+        </div> -->
+
+        <li>
+            <button class="h-button">
+                <span class="badge">{{hero.id}}</span>
+                <span class="name">{{hero.name}}</span>
+            </button>
+        </li>
+    </div>
+</div>
